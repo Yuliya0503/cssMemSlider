@@ -166,3 +166,33 @@
   font-weight: normal;
   color: #120a17;
 }
+
+@media (max-width: 768px) {
+  .slide-img {
+    width: 58%;
+    height: auto;
+  }
+
+  .logo-wrapper {
+    margin-top: 2vh;
+    justify-content: center;
+    display: flex;
+    margin-left: 0;
+  }
+
+  .logo-text {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 595px) {
+  .slide-img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .slide-img {
+    width: 90%;
+  }
+}
