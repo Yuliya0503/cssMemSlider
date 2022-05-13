@@ -127,6 +127,10 @@
   background-color: #b780a2;
 }
 
+.label:active {
+  background-color: #844ca2; 
+}
+
 .label-link {
   padding: 100%;
 }
