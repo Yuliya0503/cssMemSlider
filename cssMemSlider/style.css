@@ -2,3 +2,44 @@
   padding: 0;
   margin: 0;
 }
+
+
+.header{
+  height: 10vh;
+  width: 100%;
+}
+
+.logo-wrapper {
+  min-width: 50px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.logo-text, .footer-text {
+  font-family: 'Fugaz One', cursive;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #091414;
+
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 80vh;
+}
+
+.github-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+/*
+.footer-text {
+  font-family: 'Fugaz One', cursive;
+  font-size: 18px;
+  font-weight: normal;
+}
+/*font-family: 'Fira Sans Extra Condensed', sans-serif; -основной*/ 
