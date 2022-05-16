@@ -56,10 +56,14 @@
   display: none;
 }
 
-.sliders {
+.sliders, .sliders-text {
   position: relative;
 }
 
+.sliders-text {
+  float: left;
+  max-width: 50%;
+}
 
 .slider-wrapper {
   max-width: 100%;
@@ -67,6 +71,16 @@
   display: flex;
   flex-wrap: nowrap;
   height: 70vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.slide-text-wrapper {
+  max-width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -80,7 +94,20 @@
   min-width: 100%;
   gap: 2%;
   transition: transform 0.7s;
+  margin-top: 1em;
 }
+.slide-t {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  min-width: 100%;
+  height: 4vh;
+  transition: transform 0.7s;
+  
+  overflow-y: hidden;
+  }
 
 .slide-img {
   width: auto;
@@ -98,15 +125,13 @@
 }
 
 .nav {
-  width: 100%;
+  width: 50%;
   display: flex;
-  gap: 2%;
   align-items: center;
   justify-content: center;
-  margin-top: 1%;
   z-index: 2;
+  float: right;
 }
-
 
 .label {
   text-decoration: none;
@@ -143,8 +168,15 @@
   transform: translateX(-100%);
 }
 
+#slide2:checked~.sliders-text .slide-t {
+  transform: translateX(-100%);
+}
 
 #slide3:checked~.sliders .slide {
+  transform: translateX(-200%);
+}
+
+#slide3:checked~.sliders-text .slide-t {
   transform: translateX(-200%);
 }
 
@@ -152,7 +184,15 @@
   transform: translateX(-300%);
 }
 
+#slide4:checked~.sliders-text .slide-t {
+  transform: translateX(-300%);
+}
+
 #slide5:checked~.sliders .slide {
+  transform: translateX(-400%);
+}
+
+#slide5:checked~.sliders-text .slide-t {
   transform: translateX(-400%);
 }
 
@@ -177,6 +217,10 @@
     height: auto;
   }
 
+  .slider-wrapper {
+    max-height: 60vh;
+  }
+
   .logo-wrapper {
     margin-top: 2vh;
     justify-content: center;
@@ -187,11 +231,39 @@
   .logo-text {
     font-size: 0.7em;
   }
+
+  .sliders-text {
+    height: 2em;
+  }
 }
 
 @media (max-width: 595px) {
   .slide-img {
-    width: 70%;
+    width: 60%;
+  }
+
+  .slider-wrapper {
+    max-height: 55vh;
+  }
+
+  .mems-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .sliders-text {
+    max-width: 100%;
+    float: none;
+    height: 2em;
+    order: 2;
+  }
+
+  .nav {
+    max-width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    order: 1;
   }
 }
 
