@@ -218,7 +218,7 @@
   }
 
   .slider-wrapper {
-    max-height: 60vh;
+    max-height: 67vh;
   }
 
   .logo-wrapper {
@@ -243,7 +243,7 @@
   }
 
   .slider-wrapper {
-    max-height: 55vh;
+    max-height: 57vh;
   }
 
   .mems-wrapper {
@@ -257,6 +257,10 @@
     order: 2;
   }
 
+  .slide-t {
+    align-items: flex-start;
+    padding-left: 1.2em;
+  }
   .nav {
     max-width: 100%;
     float: none;
