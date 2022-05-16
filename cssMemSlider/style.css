@@ -38,11 +38,13 @@
 }
 
 .main-wrapper {
-  width: 100%;
+  width: 90vw;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  
 }
 
 .mems-wrapper {
@@ -54,6 +56,11 @@
 
 .input {
   display: none;
+}
+
+.sliders {
+  border: rgba(109, 198, 218, 0.5) solid 0.3rem;
+  border-radius: 3rem;
 }
 
 .sliders, .sliders-text {
@@ -99,7 +106,6 @@
 .slide-t {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 2%;
   min-width: 100%;
@@ -128,7 +134,7 @@
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   z-index: 2;
   float: right;
 }
@@ -238,6 +244,16 @@
 }
 
 @media (max-width: 595px) {
+
+  .main-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sliders {
+    border: none;
+  }
+
   .slide-img {
     width: 60%;
   }
@@ -264,6 +280,8 @@
   .nav {
     max-width: 100%;
     float: none;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     height: 3em;
