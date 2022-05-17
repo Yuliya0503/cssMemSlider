@@ -68,7 +68,7 @@
 }
 
 .sliders-text {
-  float: left;
+  align-items:flex-start;
   max-width: 50%;
 }
 
@@ -131,12 +131,12 @@
 }
 
 .nav {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   z-index: 2;
-  float: right;
+  margin-top: -20px;
 }
 
 .label {
@@ -268,7 +268,6 @@
   }
   .sliders-text {
     max-width: 100%;
-    float: none;
     height: 2em;
     order: 2;
   }
@@ -279,7 +278,6 @@
   }
   .nav {
     max-width: 100%;
-    float: none;
     justify-content: center;
     align-items: center;
     margin-left: auto;
