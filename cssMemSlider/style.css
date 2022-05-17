@@ -136,7 +136,7 @@
   align-items: center;
   justify-content: flex-end;
   z-index: 2;
-  margin-top: -20px;
+  margin-top: -25px;
 }
 
 .label {
@@ -277,6 +277,7 @@
     padding-left: 1.2em;
   }
   .nav {
+    margin-top: 0;
     max-width: 100%;
     justify-content: center;
     align-items: center;
